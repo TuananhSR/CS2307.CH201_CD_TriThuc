@@ -70,7 +70,6 @@ class UniversalLegalReasoningEngine:
                 if r: matched_dict[r["id"]] = r
 
             else:
-                # 🎯 SỬA BUG Ở ĐÂY: Dùng % làm cầu nối để bắt được cả "dây đai an toàn" hay "không mang theo..."
                 keyword_map = {
                     "KHONG_CHAP_HANH_CSGT": "%người điều khiển giao thông%",
                     "VUOT_DEN_DO": "%đèn tín hiệu%",
@@ -78,14 +77,34 @@ class UniversalLegalReasoningEngine:
                     "KHONG_GPLX": "%không có giấy phép lái xe%",
                     "DANG_KIEM_HET_HAN_DUEI_1T": "%dưới 01 tháng%",
                     "KHONG_DONG_MU_BH": "%mũ bảo hiểm%",
-                    "KHONG_THAT_DAY_AN_TOAN": "%dây%an toàn%",  # <--- Bắt gọn "dây đai an toàn"
+                    "KHONG_THAT_DAY_AN_TOAN": "%dây%an toàn%",
                     "DUNG_DIEN_THOAI": "%điện thoại%"
                 }
                 pattern = keyword_map.get(code, f"%{hv.mo_ta}%")
-                sql = "SELECT * FROM legal_provisions WHERE (vehicle_type = %s OR vehicle_type = 'Chung') AND full_legal_text ILIKE %s AND min_fine > 0 LIMIT 1;"
+                
+                sql = "SELECT * FROM legal_provisions WHERE (vehicle_type = %s OR vehicle_type = 'Chung') AND full_legal_text ILIKE %s AND min_fine > 0;"
                 cur.execute(sql, (event.loai_phuong_tien, pattern))
-                r = cur.fetchone()
-                if r: matched_dict[r["id"]] = r
+                rows = cur.fetchall()
+
+                # BỘ LỌC KHỬ NHIỄM CHÉO ĐÃ ĐƯỢC FIX LỖI STRING MATCHING
+                for r in rows:
+                    text_lower = r["raw_text"].lower()
+                    
+                    # Tạo chuỗi text_check đã xóa "mô tô" để kiểm tra chữ "ô tô" không bị trùng
+                    text_check = text_lower.replace("mô tô", "").replace("moto", "")
+                    
+                    has_oto = "ô tô" in text_check or "o to" in text_check or "xe hơi" in text_check
+                    has_xemay = "mô tô" in text_lower or "xe máy" in text_lower or "xe gắn máy" in text_lower
+                    
+                    if event.loai_phuong_tien == "OTo":
+                        if has_xemay and not has_oto:
+                            continue
+                    elif event.loai_phuong_tien == "XeMay":
+                        if has_oto and not has_xemay:
+                            continue
+                            
+                    matched_dict[r["id"]] = r
+                    break
 
         return list(matched_dict.values()), alcohol_bracket_items
 
@@ -201,4 +220,6 @@ if __name__ == "__main__":
         )
 
         # pipeline.process("Đi ô tô không thắt dây an toàn bị phạt mấy trăm?")
-        pipeline.process("Đi xe máy vượt đèn đỏ, không đội mũ bảo hiểm, uống rượu bia 0.35 mg/L bị phạt thế nào?")
+        # pipeline.process("Đi xe máy vượt đèn đỏ, không đội mũ bảo hiểm, uống rượu bia bị phạt thế nào?")
+        # pipeline.process("Tôi quên mang giấy phép lái ô tô thì phat bao nhiêu tiền và bị trừ bao nhiêu điểm?")
+        pipeline.process("hôm qua tôi chạy xe máy nhưng lỡ vượt đèn đò, lúc đó có uống rượu, sau khi vượt đèn thì tôi tông trúng một người, tôi sợ quá tôi bỏ chạy, thì bị xử phạt thế nào?")
