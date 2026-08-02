@@ -1,0 +1,5 @@
+owlready2==0.51
+protobuf==7.35.1
+psycopg2==2.9.12
+pydantic==2.13.4
+python-dotenv==1.2.2
