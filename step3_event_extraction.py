@@ -11,11 +11,12 @@ class HanhViDetail(BaseModel):
                     "['NONG_DO_CON', 'TOC_DO', 'QUEN_GPLX', 'KHONG_GPLX', "
                     "'DANG_KIEM_HET_HAN_DUEI_1T', 'DANG_KIEM_HET_HAN_TU_1T', "
                     "'KHONG_CHAP_HANH_CSGT', 'VUOT_DEN_DO', 'KHONG_DONG_MU_BH', "
-                    "'KHONG_THAT_DAY_AN_TOAN', 'DUNG_DIEN_THOAI', 'GIAO_XE_CHO_NGUOI_KHONG_DU_DIEU_KIEN']"
+                    "'KHONG_THAT_DAY_AN_TOAN', 'DUNG_DIEN_THOAI', "
+                    "'GIAO_XE_CHO_NGUOI_KHONG_DU_DIEU_KIEN', 'GAY_TAI_NAN_BO_CHAY']" # <--- Thêm mã mới
     )
     chi_so_dinh_luong: Optional[float] = Field(
         default=None, 
-        description="Chỉ số định lượng cụ thể: Nồng độ cồn hơi thở (mg/L), Vận tốc chạy quá tốc độ (km/h) nếu có."
+        description="Chỉ số định lượng cụ thể: Nồng độ cồn hơi thở (mg/L), Vận tốc chạy quá (km/h) nếu có."
     )
     mo_ta: str = Field(description="Mô tả ngắn gọn hành vi vi phạm bằng tiếng Việt.")
 
@@ -26,7 +27,7 @@ class SuKienGiaoThong(BaseModel):
     )
     doi_tuong_bi_xu_phat: str = Field(
         default="NguoiDieuKhien",
-        description="Đối tượng bị xử phạt: 'NguoiDieuKhien' (Người lái xe) hoặc 'ChuPhuongTien' (Chủ xe/Doanh nghiệp). Mặc định là 'NguoiDieuKhien'."
+        description="Đối tượng bị xử phạt: 'NguoiDieuKhien' (Người lái xe) hoặc 'ChuPhuongTien' (Chủ xe). Mặc định là 'NguoiDieuKhien'."
     )
     danh_sach_hanh_vi: List[HanhViDetail] = Field(
         default_factory=list, 
@@ -60,22 +61,22 @@ class EventExtractor:
         Nhiệm vụ: Phân tích mô tả của người dùng và trích xuất thông tin vào Schema JSON.
 
         Quy tắc gán 'doi_tuong_bi_xu_phat':
-        - Nếu hỏi về việc "cho mượn xe", "giao xe cho người chưa đủ tuổi/không có bằng", "chủ xe bị phạt thế nào" -> gán `doi_tuong_bi_xu_phat = 'ChuPhuongTien'`.
-        - Mọi trường hợp trực tiếp điều khiển xe -> gán `doi_tuong_bi_xu_phat = 'NguoiDieuKhien'`.
+        - Nếu hỏi về việc "cho mượn xe", "giao xe cho người chưa đủ tuổi/không có bằng" -> gán 'ChuPhuongTien'.
+        - Mọi trường hợp trực tiếp điều khiển xe -> gán 'NguoiDieuKhien'.
 
         Quy tắc gán 'ma_hanh_vi':
-        - Uống rượu/bia, đo cồn -> 'NONG_DO_CON' (kèm chi_so_dinh_luong mg/L nếu có)
-        - Chạy quá tốc độ -> 'TOC_DO' (kèm chi_so_dinh_luong km/h vượt quá)
+        - Uống rượu/bia, đo cồn -> 'NONG_DO_CON'
+        - Chạy quá tốc độ -> 'TOC_DO'
         - Quên mang/không mang GPLX -> 'QUEN_GPLX'
         - Không có GPLX / chưa đủ tuổi lái xe -> 'KHONG_GPLX'
         - Đăng kiểm hết hạn dưới 1 tháng -> 'DANG_KIEM_HET_HAN_DUEI_1T'
         - Đăng kiểm hết hạn từ 1 tháng trở lên -> 'DANG_KIEM_HET_HAN_TU_1T'
-        - Không chấp hành hiệu lệnh CSGT -> 'KHONG_CHAP_HANH_CSGT'
         - Vượt đèn đỏ -> 'VUOT_DEN_DO'
         - Không đội mũ bảo hiểm -> 'KHONG_DONG_MU_BH'
         - Không thắt dây an toàn -> 'KHONG_THAT_DAY_AN_TOAN'
         - Dùng điện thoại khi lái xe -> 'DUNG_DIEN_THOAI'
-        - Cho mượn/giao xe cho người không đủ điều kiện -> 'GIAO_XE_CHO_NGUOI_KHONG_DU_DIEU_KIEN'
+        - Gây tai nạn giao thông rồi bỏ chạy, không dừng lại, không giữ nguyên hiện trường -> 'GAY_TAI_NAN_BO_CHAY'
+        - Không chấp hành hiệu lệnh CSGT (Lưu ý: bỏ chạy do trốn CSGT thì dùng mã này, bỏ chạy do gây tai nạn dùng mã GAY_TAI_NAN_BO_CHAY) -> 'KHONG_CHAP_HANH_CSGT'
         """
 
         prompt = f"Mô tả của người dùng:\n\"{user_query}\""
