@@ -128,8 +128,28 @@ class ConversationalTrafficAgent:
         
         return answer
 
+    def _write_log_entry(self, log_entry: dict, filename: str = "execution_evidence_logs.json"):
+        """Ghi vết nhật ký thực thi chi tiết (Step 3 + Step 4 + Step 5) ra file JSON để làm minh chứng"""
+        logs = []
+        if os.path.exists(filename):
+            try:
+                with open(filename, "r", encoding="utf-8") as f:
+                    logs = json.load(f)
+            except Exception:
+                logs = []
+        
+        logs.append(log_entry)
+        
+        try:
+            with open(filename, "w", encoding="utf-8") as f:
+                json.dump(logs, f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            print(f"[CẢNH BÁO] Không thể lưu log minh chứng: {e}")
+
     def process_chat_turn(self, user_query: str) -> dict:
         """Xử lý một lượt hội thoại hoàn chỉnh từ câu hỏi thô của người dùng"""
+        from datetime import datetime
+
         # 1. Ngữ cảnh hóa câu hỏi dựa vào lịch sử
         standalone_query = self.contextualize_query(user_query)
         
@@ -150,6 +170,17 @@ class ConversationalTrafficAgent:
             
         # 4. Sinh câu trả lời tự nhiên
         answer = self.generate_response(user_query, standalone_query, decision)
+        
+        # 5. Ghi vết log minh chứng (Step 3, Step 4, Step 5)
+        log_entry = {
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "user_query_original": user_query,
+            "standalone_query": standalone_query,
+            "step3_event_extracted": event.model_dump(),
+            "step4_decision_and_reasoning": decision,
+            "step5_conversational_response": answer
+        }
+        self._write_log_entry(log_entry)
         
         return {
             "standalone_query": standalone_query,
