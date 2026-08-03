@@ -72,7 +72,7 @@ class UniversalLegalReasoningEngine:
             else:
                 keyword_map = {
                     "KHONG_CHAP_HANH_CSGT": "%người điều khiển giao thông%",
-                    "VUOT_DEN_DO": "%đèn tín hiệu%",
+                    "VUOT_DEN_DO": "%không chấp hành%đèn tín hiệu%",
                     "QUEN_GPLX": "%không mang%giấy phép lái xe%",
                     "KHONG_GPLX": "%không có giấy phép lái xe%",
                     "DANG_KIEM_HET_HAN_DUEI_1T": "%dưới 01 tháng%",
