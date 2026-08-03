@@ -78,7 +78,8 @@ class UniversalLegalReasoningEngine:
                     "DANG_KIEM_HET_HAN_DUEI_1T": "%dưới 01 tháng%",
                     "KHONG_DONG_MU_BH": "%mũ bảo hiểm%",
                     "KHONG_THAT_DAY_AN_TOAN": "%dây%an toàn%",
-                    "DUNG_DIEN_THOAI": "%điện thoại%"
+                    "DUNG_DIEN_THOAI": "%điện thoại%",
+                    "GAY_TAI_NAN_BO_CHAY": "%gây tai nạn%không dừng%" # <--- Thêm từ khóa ánh xạ
                 }
                 pattern = keyword_map.get(code, f"%{hv.mo_ta}%")
                 
@@ -86,22 +87,18 @@ class UniversalLegalReasoningEngine:
                 cur.execute(sql, (event.loai_phuong_tien, pattern))
                 rows = cur.fetchall()
 
-                # BỘ LỌC KHỬ NHIỄM CHÉO ĐÃ ĐƯỢC FIX LỖI STRING MATCHING
+                # BỘ LỌC KHỬ NHIỄM CHÉO
                 for r in rows:
                     text_lower = r["raw_text"].lower()
-                    
-                    # Tạo chuỗi text_check đã xóa "mô tô" để kiểm tra chữ "ô tô" không bị trùng
                     text_check = text_lower.replace("mô tô", "").replace("moto", "")
                     
                     has_oto = "ô tô" in text_check or "o to" in text_check or "xe hơi" in text_check
                     has_xemay = "mô tô" in text_lower or "xe máy" in text_lower or "xe gắn máy" in text_lower
                     
                     if event.loai_phuong_tien == "OTo":
-                        if has_xemay and not has_oto:
-                            continue
+                        if has_xemay and not has_oto: continue
                     elif event.loai_phuong_tien == "XeMay":
-                        if has_oto and not has_xemay:
-                            continue
+                        if has_oto and not has_xemay: continue
                             
                     matched_dict[r["id"]] = r
                     break
@@ -222,4 +219,4 @@ if __name__ == "__main__":
         # pipeline.process("Đi ô tô không thắt dây an toàn bị phạt mấy trăm?")
         # pipeline.process("Đi xe máy vượt đèn đỏ, không đội mũ bảo hiểm, uống rượu bia bị phạt thế nào?")
         # pipeline.process("Tôi quên mang giấy phép lái ô tô thì phat bao nhiêu tiền và bị trừ bao nhiêu điểm?")
-        pipeline.process("hôm qua tôi chạy xe máy nhưng lỡ vượt đèn đò, lúc đó có uống rượu, sau khi vượt đèn thì tôi tông trúng một người, tôi sợ quá tôi bỏ chạy, thì bị xử phạt thế nào?")
+        pipeline.process("hôm qua tôi chạy oto nhưng lỡ vượt đèn đò, lúc đó có uống rượu, sau khi vượt đèn thì tôi tông trúng một người, tôi sợ quá tôi bỏ chạy, thì bị xử phạt thế nào?")

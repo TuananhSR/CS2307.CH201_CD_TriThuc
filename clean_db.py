@@ -3,7 +3,7 @@ import psycopg2
 POSTGRES_CONFIG = {
     "dbname": "traffic_db",
     "user": "postgres",
-    "password": "tuananh7979", # Thay mật khẩu Postgres của bạn
+    "password": "", # Thay mật khẩu Postgres của bạn
     "host": "localhost",
     "port": "5432"
 }
