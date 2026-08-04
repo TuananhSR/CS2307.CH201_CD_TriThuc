@@ -12,7 +12,8 @@ class HanhViDetail(BaseModel):
                     "'DANG_KIEM_HET_HAN_DUEI_1T', 'DANG_KIEM_HET_HAN_TU_1T', "
                     "'KHONG_CHAP_HANH_CSGT', 'VUOT_DEN_DO', 'KHONG_DONG_MU_BH', "
                     "'KHONG_THAT_DAY_AN_TOAN', 'DUNG_DIEN_THOAI', "
-                    "'GIAO_XE_CHO_NGUOI_KHONG_DU_DIEU_KIEN', 'GAY_TAI_NAN_BO_CHAY']" # <--- Thêm mã mới
+                    "'GIAO_XE_CHO_NGUOI_KHONG_DU_DIEU_KIEN', 'GAY_TAI_NAN_BO_CHAY', "
+                    "'LANG_LACH_DANH_VONG']"
     )
     chi_so_dinh_luong: Optional[float] = Field(
         default=None, 
@@ -77,6 +78,7 @@ class EventExtractor:
         - Dùng điện thoại khi lái xe -> 'DUNG_DIEN_THOAI'
         - Gây tai nạn giao thông rồi bỏ chạy, không dừng lại, không giữ nguyên hiện trường -> 'GAY_TAI_NAN_BO_CHAY'
         - Không chấp hành hiệu lệnh CSGT (Lưu ý: bỏ chạy do trốn CSGT thì dùng mã này, bỏ chạy do gây tai nạn dùng mã GAY_TAI_NAN_BO_CHAY) -> 'KHONG_CHAP_HANH_CSGT'
+        - Lạng lách, đánh võng, đuổi nhau, dùng chân điều khiển vô lăng -> 'LANG_LACH_DANH_VONG'
         """
 
         prompt = f"Mô tả của người dùng:\n\"{user_query}\""

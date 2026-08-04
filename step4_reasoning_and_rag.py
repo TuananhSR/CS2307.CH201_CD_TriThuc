@@ -79,7 +79,8 @@ class UniversalLegalReasoningEngine:
                     "KHONG_DONG_MU_BH": "%mũ bảo hiểm%",
                     "KHONG_THAT_DAY_AN_TOAN": "%dây%an toàn%",
                     "DUNG_DIEN_THOAI": "%điện thoại%",
-                    "GAY_TAI_NAN_BO_CHAY": "%gây tai nạn%không dừng%" # <--- Thêm từ khóa ánh xạ
+                    "GAY_TAI_NAN_BO_CHAY": "%gây tai nạn%không dừng%",
+                    "LANG_LACH_DANH_VONG": "%lạng lách%đánh võng%"
                 }
                 pattern = keyword_map.get(code, f"%{hv.mo_ta}%")
                 
