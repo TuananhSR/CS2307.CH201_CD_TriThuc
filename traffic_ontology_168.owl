@@ -580,6 +580,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K3"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K3_Di">
@@ -588,6 +589,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K3"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K3_Dk">
@@ -651,6 +653,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K4"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K4_Db">
@@ -659,6 +662,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K4"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K4_Dc">
@@ -667,6 +671,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K4"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K4_Dd">
@@ -675,6 +680,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K4"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K4_Dđ">
@@ -683,6 +689,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K4"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K4_De">
@@ -699,6 +706,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K4"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K4_Dh">
@@ -746,6 +754,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K5_Db">
@@ -754,6 +763,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K5_Dc">
@@ -762,6 +772,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K5_Dd">
@@ -770,6 +781,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K5_Dđ">
@@ -778,6 +790,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K5_De">
@@ -786,6 +799,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K5_Dg">
@@ -794,6 +808,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K5_Dh">
@@ -802,6 +817,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K5_Di">
@@ -810,6 +826,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K5_Dk">
@@ -818,6 +835,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K5_Dl">
@@ -842,6 +860,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K5_Do">
@@ -850,6 +869,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K5_Dp">
@@ -858,6 +878,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K5_Dq">
@@ -873,6 +894,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K6_Da">
@@ -920,6 +942,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K7_Db">
@@ -928,6 +951,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K7_Dc">
@@ -936,6 +960,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K8">
@@ -943,6 +968,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K9">
@@ -958,6 +984,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K9"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K9_Db">
@@ -966,6 +993,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K9"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K9_Dc">
@@ -974,6 +1002,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K9"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K9_Dd">
@@ -982,6 +1011,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K9"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K10">
@@ -989,6 +1019,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K10_Da">
@@ -1052,6 +1083,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều6_K11"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều6_K12">
@@ -1320,6 +1352,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K3"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K3_Dc">
@@ -1439,6 +1472,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K4"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K5">
@@ -1446,6 +1480,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_XeMay"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K5_Da">
@@ -1485,6 +1520,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K6"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K6_Db">
@@ -1493,6 +1529,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K6"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K6_Dc">
@@ -1501,6 +1538,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K6"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K6_Dd">
@@ -1509,6 +1547,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K6"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K7">
@@ -1524,6 +1563,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K7_Db">
@@ -1532,6 +1572,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K7_Dc">
@@ -1540,6 +1581,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K7_Dd">
@@ -1548,6 +1590,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K7_Dđ">
@@ -1556,6 +1599,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K8">
@@ -1571,6 +1615,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K8"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K8_Db">
@@ -1579,6 +1624,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K8"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K9">
@@ -1610,6 +1656,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều7_K9"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K9_Dd">
@@ -1673,6 +1720,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_XeMay"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều7_K10_Da">
@@ -2776,6 +2824,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều12_K11"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều12_K11_Db">
@@ -2783,6 +2832,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều12_K11"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều12_K11_Dc">
@@ -2897,6 +2947,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều13_K3"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều13_K3_Db">
@@ -2905,6 +2956,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều13_K3"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều13_K3_Dc">
@@ -2928,6 +2980,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều13_K4_Da">
@@ -2959,6 +3012,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều13_K5_Da">
@@ -2998,6 +3052,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều13_K6_Da">
@@ -3029,6 +3084,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều13_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều13_K7_Db">
@@ -3037,6 +3093,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều13_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều13_K8">
@@ -3052,6 +3109,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều13_K8"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều13_K8_Db">
@@ -3060,6 +3118,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều13_K8"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều13_K9">
@@ -3205,6 +3264,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều14_K2"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều14_K2_Db">
@@ -3212,6 +3272,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều14_K2"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều14_K2_Dc">
@@ -3219,6 +3280,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều14_K2"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều14_K2_Dd">
@@ -3239,6 +3301,7 @@
   <rdf:type rdf:resource="#KhoanLuat"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều14_K3_Da">
@@ -3490,6 +3553,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều17_K4">
@@ -3497,6 +3561,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều17_K5">
@@ -3748,6 +3813,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K3">
@@ -3779,6 +3845,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K3"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K3_Dd">
@@ -3787,6 +3854,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K3"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K3_Dđ">
@@ -3803,6 +3871,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K3"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K3_Dg">
@@ -3842,6 +3911,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K5">
@@ -3857,6 +3927,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K5_Db">
@@ -3865,6 +3936,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K5_Dc">
@@ -3873,6 +3945,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K5_Dd">
@@ -3881,6 +3954,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K5_Dđ">
@@ -3889,6 +3963,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K5_De">
@@ -3897,6 +3972,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K5_Dg">
@@ -3905,6 +3981,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K5_Dh">
@@ -3913,6 +3990,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K5_Di">
@@ -3921,6 +3999,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K5_Dk">
@@ -3929,6 +4008,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K5_Dl">
@@ -3945,6 +4025,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều20_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K6">
@@ -3952,6 +4033,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K6_Da">
@@ -4007,6 +4089,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K8">
@@ -4014,6 +4097,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều20_K9">
@@ -4202,6 +4286,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều21_K6"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều21_K6_Db">
@@ -4210,6 +4295,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều21_K6"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều21_K6_Dc">
@@ -4241,6 +4327,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều21_K7_Da">
@@ -4272,6 +4359,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều21_K8"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều21_K8_Db">
@@ -4280,6 +4368,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều21_K8"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều21_K8_Dc">
@@ -4288,6 +4377,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều21_K8"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều21_K8_Dd">
@@ -4296,6 +4386,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều21_K8"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều21_K8_Dđ">
@@ -4304,6 +4395,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều21_K8"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều21_K9">
@@ -4311,6 +4403,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều21_K10">
@@ -4318,6 +4411,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều21_K10_Da">
@@ -4341,6 +4435,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều21_K12">
@@ -4388,6 +4483,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều22_K1_Da">
@@ -4411,6 +4507,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều22_K3">
@@ -4418,6 +4515,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều22_K3_Da">
@@ -4498,6 +4596,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều23_K4">
@@ -4505,6 +4604,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều23_K5">
@@ -4512,6 +4612,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều23_K6">
@@ -4548,6 +4649,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều24_K3">
@@ -4560,6 +4662,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều25_K2">
@@ -4626,6 +4729,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều26_K2"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều26_K2_De">
@@ -4720,6 +4824,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều26_K6"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều26_K6_Dc">
@@ -4727,6 +4832,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều26_K6"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều26_K6_Dd">
@@ -4734,6 +4840,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều26_K6"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều26_K7">
@@ -4754,6 +4861,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều26_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều26_K7_Dc">
@@ -4761,6 +4869,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều26_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều26_K7_Dd">
@@ -4782,6 +4891,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều26_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều26_K7_Dg">
@@ -4803,6 +4913,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều26_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều26_K8">
@@ -4830,6 +4941,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều26_K8"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều26_K9">
@@ -4961,6 +5073,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều27_K3">
@@ -4968,6 +5081,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều27_K3_Da">
@@ -5017,12 +5131,14 @@
   <rdf:type rdf:resource="#KhoanLuat"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều28_K3">
   <rdf:type rdf:resource="#KhoanLuat"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều28_K4">
@@ -5055,6 +5171,7 @@
   <rdf:type rdf:resource="#KhoanLuat"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều29_K4">
@@ -5071,6 +5188,7 @@
   <rdf:type rdf:resource="#KhoanLuat"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều30_K3">
@@ -5174,12 +5292,14 @@
   <rdf:type rdf:resource="#KhoanLuat"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K6">
   <rdf:type rdf:resource="#KhoanLuat"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K7">
@@ -5221,6 +5341,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K7_De">
@@ -5235,6 +5356,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K7_Dh">
@@ -5270,6 +5392,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K7"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K7_Dn">
@@ -5325,6 +5448,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K8"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K8_De">
@@ -5332,6 +5456,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K8"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K8_Dg">
@@ -5346,6 +5471,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K8"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K9">
@@ -5366,6 +5492,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K9"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K9_Dc">
@@ -5373,6 +5500,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K9"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K9_Dd">
@@ -5380,6 +5508,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K9"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K9_Dđ">
@@ -5387,6 +5516,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K9"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K9_De">
@@ -5413,6 +5543,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K11"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K11_Db">
@@ -5420,6 +5551,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K11"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K11_Dc">
@@ -5441,6 +5573,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K11"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K12">
@@ -5454,6 +5587,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K12"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K12_Db">
@@ -5461,6 +5595,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K12"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K12_Dc">
@@ -5488,6 +5623,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K13"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K13_Db">
@@ -5495,6 +5631,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K13"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K13_Dc">
@@ -5502,6 +5639,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K13"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K13_Dd">
@@ -5509,6 +5647,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K13"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K13_Dđ">
@@ -5516,6 +5655,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K13"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K14">
@@ -5529,6 +5669,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K14"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K14_Db">
@@ -5536,6 +5677,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K14"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K14_Dc">
@@ -5543,6 +5685,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K14"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K14_Dd">
@@ -5550,6 +5693,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K14"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K14_Dđ">
@@ -5557,6 +5701,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K14"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K14_De">
@@ -5564,6 +5709,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K14"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K14_Dg">
@@ -5571,6 +5717,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K14"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K14_Dh">
@@ -5578,6 +5725,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K14"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K14_Di">
@@ -5591,6 +5739,7 @@
   <rdf:type rdf:resource="#KhoanLuat"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K16">
@@ -5604,6 +5753,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K16"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K16_Db">
@@ -5611,6 +5761,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều32_K16"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều32_K16_Dc">
@@ -5850,6 +6001,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều34_K2">
@@ -5864,6 +6016,7 @@
   <apDungChoPhuongTien rdf:resource="#Ent_OTo"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều34_K3_Da">
@@ -5911,6 +6064,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều34_K4"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều34_K4_Db">
@@ -5919,6 +6073,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều34_K4"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều34_K4_Dc">
@@ -5927,6 +6082,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều34_K4"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều34_K5">
@@ -5942,6 +6098,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều34_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều34_K5_Db">
@@ -5950,6 +6107,7 @@
   <thuocKhoan rdf:resource="#ND168_Điều34_K5"/>
   <coMinFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40000000</coMinFine>
   <coMaxFine rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000000</coMaxFine>
+  <truDiemGPLX rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</truDiemGPLX>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#ND168_Điều34_K6">
