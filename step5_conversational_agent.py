@@ -61,6 +61,18 @@ class ConversationalTrafficAgent:
             "Nhiệm vụ của bạn là giải thích kết quả xử lý từ Hệ chuyên gia pháp lý thành một phản hồi cực kỳ NGÂN GỌN, SÚC TÍCH, đi thẳng vào vấn đề nhưng chuẩn xác tuyệt đối về pháp lý.\n\n"
             "Dữ liệu từ Hệ Chuyên Gia (Nguồn dữ liệu tối thượng - BẮT BUỘC tuân thủ, KHÔNG tự ý thay đổi số liệu/điều khoản):\n"
             "{expert_system_json}\n\n"
+            "PHÂN TÍCH TRẠNG THÁI HỆ THỐNG VÀ TRÌNH BÀY PHẢN HỒI (BẮT BUỘC TUÂN THỦ HOÀN TOÀN):\n\n"
+            
+            "📌 TRƯỜNG HỢP 1: Hệ chuyên gia trả về trạng thái thiếu thông tin ('mode': 'AMBIGUOUS_FALLBACK')\n"
+            "- Tuyệt đối KHÔNG hiển thị phần 'Mức xử phạt tổng hợp' với một con số cụ thể của một xe bất kỳ hay bất kỳ ký hiệu đóng mở ngoặc vuông nào (ví dụ: [ND168_Điều_...]).\n"
+            "- Giải thích ngắn gọn rằng hành vi này có các mức xử phạt khác nhau tùy thuộc vào loại phương tiện di chuyển.\n"
+            "- Cung cấp một tóm tắt so sánh ngắn gọn về mức phạt của hành vi này cho các loại phương tiện phổ biến dựa trên kiến thức luật chung của Nghị định 168 để hỗ trợ người dùng ngay lập tức:\n"
+            "  * Đối với Ô tô: Phạt bao nhiêu? Có tước bằng/trừ điểm không?\n"
+            "  * Đối với Xe máy: Phạt bao nhiêu? Có tước bằng/trừ điểm không?\n"
+            "  * Đối với Xe đạp (nếu có quy định): Phạt bao nhiêu?\n"
+            "- Đặt câu hỏi làm rõ siêu ngắn gọn ở cuối để hỏi người dùng điều khiển loại phương tiện nào (ô tô, xe máy,...) để hệ thống tính toán chính xác nhất.\n\n"
+            
+            "📌 TRƯỜNG HỢP 2: Hệ chuyên gia trả về kết quả quyết định đầy đủ ('mode': 'SINGLE_SCENARIO_DECISION')\n"
             "Yêu cầu trình bày (Viết cực kỳ cô đọng, loại bỏ hoàn toàn các câu từ xã giao rườm rà):\n"
             "1. **Mức xử phạt tổng hợp**: Ghi rõ tổng số tiền phạt dưới dạng khoảng phạt tổng hợp (Ví dụ: '42.000.000 - 48.000.000 VNĐ') kèm mức phạt áp dụng cụ thể sau tính toán, tổng số điểm GPLX bị trừ, tổng thời gian tước bằng (nếu có).\n"
             "   *LƯU Ý QUAN TRỌNG VỀ ĐIỂM GPLX (BẮT BUỘC):* Giấy phép lái xe chỉ có tối đa 12 điểm. Nếu tổng số điểm bị trừ của các lỗi cộng lại lớn hơn hoặc bằng 12 điểm, hãy nhấn mạnh rõ: bạn bị trừ hết điểm GPLX (12/12 điểm), không được phép điều khiển phương tiện trong ít nhất 06 tháng và sau thời hạn này phải tham gia kiểm tra lại kiến thức pháp luật giao thông đường bộ mới được phục hồi điểm.\n"
@@ -75,8 +87,7 @@ class ConversationalTrafficAgent:
             "   - Tổng mức phạt ước tính sau khi cộng dồn với các lỗi vi phạm khác (nếu có).\n"
             "   - Nếu tổng điểm bị trừ của kịch bản đó >= 12 điểm, ghi chú rõ: bị trừ hết điểm GPLX (12/12 điểm), dừng lái xe ít nhất 6 tháng và phải thi kiểm tra lại luật.\n"
             "4. **Lưu ý**: Đúng một câu khuyên an toàn ngắn gọn dưới 15 từ.\n"
-            "5. Nếu là trạng thái thiếu thông tin ('AMBIGUOUS_FALLBACK'), hãy đặt câu hỏi làm rõ siêu ngắn gọn để hỏi người dùng lái loại phương tiện nào (ô tô, xe máy,...).\n"
-            "6. Tuyệt đối KHÔNG tự bịa đặt bất kỳ thông tin nào ngoài dữ liệu JSON."
+            "5. Tuyệt đối KHÔNG tự bịa đặt bất kỳ thông tin nào ngoài dữ liệu JSON."
         )
         self.generator_prompt = ChatPromptTemplate.from_messages([
             ("system", generator_system_prompt),

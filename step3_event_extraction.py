@@ -13,7 +13,9 @@ class HanhViDetail(BaseModel):
                     "'KHONG_CHAP_HANH_CSGT', 'VUOT_DEN_DO', 'KHONG_DONG_MU_BH', "
                     "'KHONG_THAT_DAY_AN_TOAN', 'DUNG_DIEN_THOAI', "
                     "'GIAO_XE_CHO_NGUOI_KHONG_DU_DIEU_KIEN', 'GAY_TAI_NAN_BO_CHAY', "
-                    "'LANG_LACH_DANH_VONG']"
+                    "'LANG_LACH_DANH_VONG', 'DI_NGUOC_CHIEU_DUONG_CAM', 'MA_TUY', "
+                    "'DUNG_DO_SAI_QUY_DINH', 'KHONG_BAT_DEN', 'CHUYEN_HUONG_KHONG_XI_NHAN', "
+                    "'DUA_XE_TRAI_PHEP', 'CHO_QUA_SO_NGUOI', 'CHO_QUA_TAI']"
     )
     chi_so_dinh_luong: Optional[float] = Field(
         default=None, 
@@ -65,20 +67,28 @@ class EventExtractor:
         - Nếu hỏi về việc "cho mượn xe", "giao xe cho người chưa đủ tuổi/không có bằng" -> gán 'ChuPhuongTien'.
         - Mọi trường hợp trực tiếp điều khiển xe -> gán 'NguoiDieuKhien'.
 
-        Quy tắc gán 'ma_hanh_vi':
-        - Uống rượu/bia, đo cồn -> 'NONG_DO_CON'
+        Quy tắc gán 'ma_hanh_vi' (BẮT BUỘC KHỚP VỚI CÁC KHUNG DƯỚI ĐÂY):
+        - Uống rượu/bia, đo cồn, nồng độ cồn -> 'NONG_DO_CON'
         - Chạy quá tốc độ -> 'TOC_DO'
         - Quên mang/không mang GPLX -> 'QUEN_GPLX'
-        - Không có GPLX / chưa đủ tuổi lái xe -> 'KHONG_GPLX'
+        - Không có GPLX / chưa đủ tuổi lái xe / bằng lái hết hạn / dùng bằng giả -> 'KHONG_GPLX'
         - Đăng kiểm hết hạn dưới 1 tháng -> 'DANG_KIEM_HET_HAN_DUEI_1T'
         - Đăng kiểm hết hạn từ 1 tháng trở lên -> 'DANG_KIEM_HET_HAN_TU_1T'
-        - Vượt đèn đỏ -> 'VUOT_DEN_DO'
+        - Vượt đèn đỏ, vượt đèn vàng, không chấp hành tín hiệu đèn -> 'VUOT_DEN_DO'
         - Không đội mũ bảo hiểm -> 'KHONG_DONG_MU_BH'
-        - Không thắt dây an toàn -> 'KHONG_THAT_DAY_AN_TOAN'
-        - Dùng điện thoại khi lái xe -> 'DUNG_DIEN_THOAI'
+        - Không thắt dây an toàn khi lái xe -> 'KHONG_THAT_DAY_AN_TOAN'
+        - Dùng điện thoại khi lái xe, nhắn tin khi lái -> 'DUNG_DIEN_THOAI'
         - Gây tai nạn giao thông rồi bỏ chạy, không dừng lại, không giữ nguyên hiện trường -> 'GAY_TAI_NAN_BO_CHAY'
-        - Không chấp hành hiệu lệnh CSGT (Lưu ý: bỏ chạy do trốn CSGT thì dùng mã này, bỏ chạy do gây tai nạn dùng mã GAY_TAI_NAN_BO_CHAY) -> 'KHONG_CHAP_HANH_CSGT'
-        - Lạng lách, đánh võng, đuổi nhau, dùng chân điều khiển vô lăng -> 'LANG_LACH_DANH_VONG'
+        - Không chấp hành hiệu lệnh CSGT, bỏ chạy trốn CSGT -> 'KHONG_CHAP_HANH_CSGT'
+        - Lạng lách, đánh võng, đuổi nhau trên đường, dùng chân lái xe -> 'LANG_LACH_DANH_VONG'
+        - Đi ngược chiều, đi vào đường cấm, đi ngược chiều trên cao tốc, lùi/quay đầu trên cao tốc -> 'DI_NGUOC_CHIEU_DUONG_CAM'
+        - Sử dụng chất ma túy, chất kích thích cấm, không chấp hành kiểm tra ma túy -> 'MA_TUY'
+        - Dừng xe, đỗ xe trái quy định, đỗ xe trên dốc không chèn bánh, đỗ ngược chiều, dừng đỗ sai quy định -> 'DUNG_DO_SAI_QUY_DINH'
+        - Không bật đèn chiếu sáng khi tối (18h-6h), sương mù, thời tiết xấu, sương muối hoặc hầm đường bộ -> 'KHONG_BAT_DEN'
+        - Chuyển hướng không có tín hiệu báo hướng rẽ, không bật xi nhan -> 'CHUYEN_HUONG_KHONG_XI_NHAN'
+        - Đua xe trái phép, tổ chức đua xe -> 'DUA_XE_TRAI_PHEP'
+        - Chở quá số người quy định được phép chở của phương tiện -> 'CHO_QUA_SO_NGUOI'
+        - Chở hàng quá tải trọng cho phép của xe, quá tải trọng cầu đường -> 'CHO_QUA_TAI'
         """
 
         prompt = f"Mô tả của người dùng:\n\"{user_query}\""
