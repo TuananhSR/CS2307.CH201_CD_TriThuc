@@ -152,12 +152,16 @@ class UniversalLegalReasoningEngine:
                 max_f = b["max_fine"] or 0
                 calc_f = max_f if (has_aggravating and not has_mitigating) else ((min_f + max_f) // 2)
                 
+                tot_revoc = max(max_revocation_months, b.get("license_revocation_months", 0) or 0)
                 alcohol_options_notice.append({
                     "alcohol_frame": f"Khung {b['alcohol_level_frame']}",
                     "raw_text": b["raw_text"],
                     "alcohol_fine_range": f"{min_f:,} - {max_f:,} VNĐ",
-                    "total_fine_including_other_violations": f"{(total_calc + calc_f):,} VNĐ",
-                    "total_points_deducted": total_points + (b["points_deducted"] or 0)
+                    "alcohol_calculated_fine": calc_f,
+                    "total_fine_range_including_other_violations": f"{(total_min + min_f):,} - {(total_max + max_f):,} VNĐ",
+                    "total_calculated_fine_including_other_violations": total_calc + calc_f,
+                    "total_points_deducted": total_points + (b["points_deducted"] or 0),
+                    "total_license_revocation_months": tot_revoc
                 })
 
         res = {

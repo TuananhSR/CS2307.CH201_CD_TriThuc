@@ -83,23 +83,107 @@ def determine_speed_frame(text: str):
             return 4
     return None
 
-def parse_and_map_points(law_chunks: list) -> dict:
+VALID_POINTS = {'a', 'b', 'c', 'd', 'đ', 'e', 'g', 'h', 'i', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y'}
+
+def map_point_letter_to_id(p: str) -> str:
+    p = p.strip().lower()
+    if p == 'đ':
+        return 'Dđ'
+    return 'D' + p
+
+def parse_decree_references_advanced(article_prefix: str, text: str) -> list:
+    targets = []
+    text = clean_unicode(text).lower()
+    
+    # Split text into segments by both semicolon and comma
+    normalized_text = text.replace(";", ",")
+    raw_segments = normalized_text.split(",")
+    
+    parsed_segments = []
+    for seg in raw_segments:
+        seg = seg.strip()
+        if not seg:
+            continue
+        
+        # Find clause numbers: 'khoản 11'
+        clauses = re.findall(r'khoản\s+(\d+)', seg)
+        clause = clauses[0] if clauses else None
+        
+        # Find point letters: 'điểm a'
+        all_points = re.findall(r'điểm\s+([a-zđ]+)', seg)
+        points = [p for p in all_points if p in VALID_POINTS]
+        
+        parsed_segments.append({
+            "text": seg,
+            "points": points,
+            "clause": clause
+        })
+        
+    # Backward-association: if a segment has points but no clause,
+    # it inherits the clause from the nearest following segment that has a clause.
+    for i in range(len(parsed_segments)):
+        if parsed_segments[i]["points"] and parsed_segments[i]["clause"] is None:
+            # Look forward for a clause
+            for j in range(i + 1, len(parsed_segments)):
+                if parsed_segments[j]["clause"] is not None:
+                    parsed_segments[i]["clause"] = parsed_segments[j]["clause"]
+                    break
+                    
+    # Generate target IDs
+    for seg in parsed_segments:
+        clause_num = seg["clause"]
+        if clause_num:
+            if seg["points"]:
+                for p in seg["points"]:
+                    p_id = map_point_letter_to_id(p)
+                    targets.append(f"{article_prefix}_K{clause_num}_{p_id}")
+            else:
+                targets.append(f"{article_prefix}_K{clause_num}")
+                
+    return targets
+
+def is_penalty_clause(t: str) -> bool:
+    if "Điều6" in t:
+        return "_K15" in t or "_K16" in t
+    elif "Điều7" in t:
+        return "_K11" in t or "_K12" in t or "_K13" in t
+    elif "Điều8" in t:
+        return "_K10" in t or "_K11" in t
+    return False
+
+def build_penalties_maps(law_chunks: list):
     points_map = {}
+    revocation_map = {}
+    
     for chunk in law_chunks:
-        full_text = clean_unicode(chunk.get("full_legal_text", "")).lower()
-        if "trừ điểm giấy phép lái xe" in full_text or "trừ" in full_text:
-            matches = re.findall(
-                r'(?:điểm\s+([a-đe-k])\s+)?khoản\s+(\d+)[^;\.]*?trừ\s+(\d+)\s+điểm', 
-                full_text
-            )
-            article_prefix = chunk["id"].split("_K")[0]
-            for point_letter, clause_num, pts in matches:
-                if point_letter:
-                    target_id = f"{article_prefix}_K{clause_num}_D{point_letter}"
-                else:
-                    target_id = f"{article_prefix}_K{clause_num}"
-                points_map[target_id] = int(pts)
-    return points_map
+        full_text = clean_unicode(chunk.get("full_legal_text", ""))
+        raw_text = clean_unicode(chunk.get("raw_text", ""))
+        chunk_id = chunk["id"]
+        article_prefix = chunk_id.split("_K")[0]
+        
+        # 1. Parse point deductions
+        if "trừ điểm giấy phép lái xe" in full_text.lower():
+            pts_match = re.search(r'bị\s+trừ\s+điểm\s+giấy\s+phép\s+lái\s+xe\s+(\d+)\s+điểm', full_text.lower())
+            if pts_match:
+                pts = int(pts_match.group(1))
+                targets = parse_decree_references_advanced(article_prefix, raw_text)
+                for t in targets:
+                    if is_penalty_clause(t):
+                        continue
+                    points_map[t] = pts
+                    
+        # 2. Parse license revocation months
+        if "tước quyền sử dụng giấy phép lái xe" in full_text.lower():
+            revoc_match = re.search(r'tước\s+quyền\s+sử\s+dụng\s+giấy\s+phép\s+lái\s+xe(?:\s+từ)?\s+(\d+)\s+tháng(?:\s+đến\s+(\d+)\s+tháng)?', full_text.lower())
+            if revoc_match:
+                months = int(revoc_match.group(2)) if revoc_match.group(2) else int(revoc_match.group(1))
+                targets = parse_decree_references_advanced(article_prefix, raw_text)
+                for t in targets:
+                    if is_penalty_clause(t):
+                        continue
+                    revocation_map[t] = months
+                    
+    return points_map, revocation_map
 
 def run_step2_pipeline(json_path: str, owl_path: str, db_config: dict):
     if not os.path.exists(json_path):
@@ -108,7 +192,7 @@ def run_step2_pipeline(json_path: str, owl_path: str, db_config: dict):
     with open(json_path, "r", encoding="utf-8") as f:
         law_chunks = json.load(f)
 
-    points_map = parse_and_map_points(law_chunks)
+    points_map, revocation_map = build_penalties_maps(law_chunks)
 
     # Khởi tạo Ontology
     onto = get_ontology("http://traffic_expert_system.org/nd168.owl")
@@ -162,6 +246,7 @@ def run_step2_pipeline(json_path: str, owl_path: str, db_config: dict):
             alc_frame = determine_alcohol_frame(full_text)
             spd_frame = determine_speed_frame(full_text)
             pts = points_map.get(chunk_id, 0)
+            revoc_months = revocation_map.get(chunk_id, 0)
 
             # CẮT ĐÚNG PARENT ID ĐỂ KẾ THỪA TIỀN PHẠT (Fix bug Dây an toàn)
             parent_id = None
@@ -189,7 +274,7 @@ def run_step2_pipeline(json_path: str, owl_path: str, db_config: dict):
 
             raw_db_rows.append((
                 chunk_id, parent_id, chunk["level"], vehicle_type,
-                min_f, max_f, pts, 0, alc_frame, spd_frame,
+                min_f, max_f, pts, revoc_months, alc_frame, spd_frame,
                 chunk["source"], article_title,
                 str(chunk["clause"]) if chunk["clause"] else None,
                 str(chunk["point"]) if chunk["point"] else None,
