@@ -78,7 +78,7 @@ class UniversalLegalReasoningEngine:
                     "DANG_KIEM_HET_HAN_DUEI_1T": "%dưới 01 tháng%",
                     "KHONG_DONG_MU_BH": "%mũ bảo hiểm%",
                     "KHONG_THAT_DAY_AN_TOAN": "%dây%an toàn%",
-                    "DUNG_DIEN_THOAI": "%điện thoại%",
+                    "DUNG_DIEN_THOAI": "%sử dụng điện thoại%",
                     "GAY_TAI_NAN_BO_CHAY": "%gây tai nạn%không dừng%",
                     "LANG_LACH_DANH_VONG": "%lạng lách%đánh võng%",
                     "DI_NGUOC_CHIEU_DUONG_CAM": "%ngược chiều%",
@@ -116,13 +116,18 @@ class UniversalLegalReasoningEngine:
                 if filtered_rows:
                     desc_tokens = set(re.sub(r'[^\w\s]', ' ', hv.mo_ta.lower()).split())
                     best_row = None
-                    max_overlap = -1
+                    max_score = -1
                     
                     for r in filtered_rows:
                         r_tokens = set(re.sub(r'[^\w\s]', ' ', r["raw_text"].lower()).split())
                         overlap = len(desc_tokens.intersection(r_tokens))
-                        if overlap > max_overlap:
-                            max_overlap = overlap
+                        # Điểm số tổng hợp = số từ trùng lặp + điểm thưởng nếu trùng khớp loại phương tiện cụ thể
+                        score = overlap
+                        if r["vehicle_type"] == event.loai_phuong_tien:
+                            score += 10
+                            
+                        if score > max_score:
+                            max_score = score
                             best_row = r
                     
                     if best_row:

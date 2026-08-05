@@ -64,30 +64,35 @@ class ConversationalTrafficAgent:
             "PHÂN TÍCH TRẠNG THÁI HỆ THỐNG VÀ TRÌNH BÀY PHẢN HỒI (BẮT BUỘC TUÂN THỦ HOÀN TOÀN):\n\n"
             
             "📌 TRƯỜNG HỢP 1: Hệ chuyên gia trả về trạng thái thiếu thông tin ('mode': 'AMBIGUOUS_FALLBACK')\n"
-            "- Tuyệt đối KHÔNG hiển thị phần 'Mức xử phạt tổng hợp' với một con số cụ thể của một xe bất kỳ hay bất kỳ ký hiệu đóng mở ngoặc vuông nào (ví dụ: [ND168_Điều_...]).\n"
-            "- Giải thích ngắn gọn rằng hành vi này có các mức xử phạt khác nhau tùy thuộc vào loại phương tiện di chuyển.\n"
-            "- Cung cấp một tóm tắt so sánh ngắn gọn về mức phạt của hành vi này cho các loại phương tiện phổ biến dựa trên kiến thức luật chung của Nghị định 168 để hỗ trợ người dùng ngay lập tức:\n"
-            "  * Đối với Ô tô: Phạt bao nhiêu? Có tước bằng/trừ điểm không?\n"
-            "  * Đối với Xe máy: Phạt bao nhiêu? Có tước bằng/trừ điểm không?\n"
-            "  * Đối với Xe đạp (nếu có quy định): Phạt bao nhiêu?\n"
-            "- Đặt câu hỏi làm rõ siêu ngắn gọn ở cuối để hỏi người dùng điều khiển loại phương tiện nào (ô tô, xe máy,...) để hệ thống tính toán chính xác nhất.\n\n"
+            "- Nếu trường 'factual_comparative_penalties' hoàn toàn RỖNG (không tìm thấy bất cứ quy định phạt nào cho Ô tô, Xe máy, Xe đạp từ DB):\n"
+            "  * Hãy thông báo rõ ràng: 'Hệ thống hiện tại không tìm thấy quy định xử phạt cụ thể cho hành vi này trong cơ sở dữ liệu Nghị định 168/2024/NĐ-CP.'\n"
+            "  * Tuyệt đối KHÔNG tự ý suy đoán mức phạt từ trí nhớ.\n"
+            "- Nếu trường 'factual_comparative_penalties' có chứa dữ liệu thực tế, giải thích ngắn gọn hành vi này có mức phạt khác nhau tùy phương tiện.\n"
+            "  * Trình bày danh sách so sánh bằng cách đọc trực tiếp dữ liệu thực tế từ trường 'factual_comparative_penalties' (Tuyệt đối KHÔNG tự bịa số liệu nằm ngoài trường này):\n"
+            "    - Đối với Ô tô (nếu có trong dữ liệu): Phạt [khoảng tiền phạt] (áp dụng cụ thể [số tiền cụ thể]), tước GPLX [số tháng] tháng (nếu có).\n"
+            "    - Đối với Xe máy (nếu có trong dữ liệu): Phạt [khoảng tiền phạt] (áp dụng cụ thể [số tiền cụ thể]), tước GPLX [số tháng] tháng (nếu có).\n"
+            "    - Đối với Xe đạp (nếu có trong dữ liệu): Phạt [khoảng tiền phạt] (áp dụng cụ thể [số tiền cụ thể]).\n"
+            "- Luôn kết thúc bằng một câu hỏi làm rõ siêu ngắn gọn để hỏi người dùng đi loại xe nào (ô tô, xe máy, xe đạp...).\n\n"
             
-            "📌 TRƯỜNG HỢP 2: Hệ chuyên gia trả về kết quả quyết định đầy đủ ('mode': 'SINGLE_SCENARIO_DECISION')\n"
-            "Yêu cầu trình bày (Viết cực kỳ cô đọng, loại bỏ hoàn toàn các câu từ xã giao rườm rà):\n"
-            "1. **Mức xử phạt tổng hợp**: Ghi rõ tổng số tiền phạt dưới dạng khoảng phạt tổng hợp (Ví dụ: '42.000.000 - 48.000.000 VNĐ') kèm mức phạt áp dụng cụ thể sau tính toán, tổng số điểm GPLX bị trừ, tổng thời gian tước bằng (nếu có).\n"
-            "   *LƯU Ý QUAN TRỌNG VỀ ĐIỂM GPLX (BẮT BUỘC):* Giấy phép lái xe chỉ có tối đa 12 điểm. Nếu tổng số điểm bị trừ của các lỗi cộng lại lớn hơn hoặc bằng 12 điểm, hãy nhấn mạnh rõ: bạn bị trừ hết điểm GPLX (12/12 điểm), không được phép điều khiển phương tiện trong ít nhất 06 tháng và sau thời hạn này phải tham gia kiểm tra lại kiến thức pháp luật giao thông đường bộ mới được phục hồi điểm.\n"
-            "2. **Chi tiết từng hành vi vi phạm (Căn cứ pháp lý & Hình phạt riêng lẻ)**: Liệt kê rõ từng hành vi vi phạm. Với mỗi hành vi, ghi cụ thể:\n"
-            "   - Số tiền phạt áp dụng: BẮT BUỘC ghi rõ cả khoảng phạt (từ trường 'fine_range') và số tiền phạt áp dụng cụ thể (từ trường 'calculated_fine'). Ví dụ: 'Phạt 18.000.000 - 20.000.000 VNĐ (Áp dụng cụ thể: 19.000.000 VNĐ)'.\n"
-            "   - Số điểm GPLX bị trừ riêng của hành vi đó.\n"
-            "   - Thời gian tước GPLX riêng (nếu có).\n"
-            "   - Căn cứ pháp lý (Điều, Khoản, Điểm) trích xuất từ dữ liệu.\n"
-            "3. **Các kịch bản cồn (Chỉ ghi nếu dữ liệu có 'alcohol_scenarios_for_vehicle')**: Liệt kê 3 khung cồn dưới dạng các gạch đầu dòng ngắn. Với mỗi khung, phải ghi rõ:\n"
-            "   - Mức phạt riêng của nồng độ cồn đó (ví dụ: 'Khoảng phạt riêng: 6.000.000 - 8.000.000 VNĐ, trung bình dự kiến: 7.000.000 VNĐ').\n"
-            "   - Điểm GPLX bị trừ tương ứng và số tháng tước quyền sử dụng GPLX (nếu có).\n"
-            "   - Tổng mức phạt ước tính sau khi cộng dồn với các lỗi vi phạm khác (nếu có).\n"
-            "   - Nếu tổng điểm bị trừ của kịch bản đó >= 12 điểm, ghi chú rõ: bị trừ hết điểm GPLX (12/12 điểm), dừng lái xe ít nhất 6 tháng và phải thi kiểm tra lại luật.\n"
-            "4. **Lưu ý**: Đúng một câu khuyên an toàn ngắn gọn dưới 15 từ.\n"
-            "5. Tuyệt đối KHÔNG tự bịa đặt bất kỳ thông tin nào ngoài dữ liệu JSON."
+            "📌 TRƯỜNG HỢP 2: Hệ chuyên gia trả về kết quả quyết định cụ thể ('mode': 'SINGLE_SCENARIO_DECISION' hoặc 'SINGLE_VEHICLE_ALCOHOL_BRACKETS')\n"
+            "- Nếu danh sách 'detailed_penalties' và 'alcohol_scenarios_for_vehicle' đều hoàn toàn RỖNG (không tìm thấy điều luật phù hợp trong DB):\n"
+            "  * Hãy thông báo rõ ràng: 'Hệ thống hiện tại không tìm thấy điều khoản xử phạt cụ thể cho hành vi này của loại xe tương ứng trong cơ sở dữ liệu Nghị định 168/2024/NĐ-CP.'\n"
+            "  * Tuyệt đối không được bịa ra số phạt hay bảo phạt 0 VNĐ.\n"
+            "- Nếu có dữ liệu phạt thực tế, trình bày cực kỳ cô đọng theo cấu trúc sau:\n"
+            "  1. **Mức xử phạt tổng hợp**: Ghi rõ tổng số tiền phạt dưới dạng khoảng phạt tổng hợp kèm mức phạt áp dụng cụ thể sau tính toán, tổng số điểm GPLX bị trừ, tổng thời gian tước bằng (nếu có).\n"
+            "     *LƯU Ý QUAN TRỌNG VỀ ĐIỂM GPLX (BẮT BUỘC):* Giấy phép lái xe chỉ có tối đa 12 điểm. Nếu tổng số điểm bị trừ của các lỗi cộng lại lớn hơn hoặc bằng 12 điểm, hãy nhấn mạnh rõ: bạn bị trừ hết điểm GPLX (12/12 điểm), không được phép điều khiển phương tiện trong ít nhất 06 tháng và sau thời hạn này phải tham gia kiểm tra lại kiến thức pháp luật giao thông đường bộ mới được phục hồi điểm.\n"
+            "  2. **Chi tiết từng hành vi vi phạm (Căn cứ pháp lý & Hình phạt riêng lẻ)**: Liệt kê rõ từng hành vi vi phạm. Với mỗi hành vi, ghi cụ thể:\n"
+            "     - Số tiền phạt áp dụng: BẮT BUỘC ghi rõ cả khoảng phạt (từ trường 'fine_range') và số tiền phạt áp dụng cụ thể (từ trường 'calculated_fine'). Ví dụ: 'Phạt 18.000.000 - 20.000.000 VNĐ (Áp dụng cụ thể: 19.000.000 VNĐ)'.\n"
+            "     - Số điểm GPLX bị trừ riêng của hành vi đó.\n"
+            "     - Thời gian tước GPLX riêng (nếu có).\n"
+            "     - Căn cứ pháp lý (Điều, Khoản, Điểm) trích xuất từ dữ liệu.\n"
+            "  3. **Các kịch bản cồn (Chỉ ghi nếu dữ liệu có 'alcohol_scenarios_for_vehicle')**: Liệt kê 3 khung cồn dưới dạng các gạch đầu dòng ngắn. Với mỗi khung, phải ghi rõ:\n"
+            "     - Mức phạt riêng của nồng độ cồn đó (ví dụ: 'Khoảng phạt riêng: 6.000.000 - 8.000.000 VNĐ, trung bình dự kiến: 7.000.000 VNĐ').\n"
+            "     - Điểm GPLX bị trừ tương ứng và số tháng tước quyền sử dụng GPLX (nếu có).\n"
+            "     - Tổng mức phạt ước tính sau khi cộng dồn với các lỗi vi phạm khác (nếu có).\n"
+            "     - Nếu tổng điểm bị trừ của kịch bản đó >= 12 điểm, ghi chú rõ: bị trừ hết điểm GPLX (12/12 điểm), dừng lái xe ít nhất 6 tháng và phải thi kiểm tra lại luật.\n"
+            "  4. **Lưu ý**: Đúng một câu khuyên an toàn ngắn gọn dưới 15 từ.\n"
+            "  5. Tuyệt đối KHÔNG tự bịa đặt bất kỳ thông tin nào ngoài dữ liệu JSON."
         )
         self.generator_prompt = ChatPromptTemplate.from_messages([
             ("system", generator_system_prompt),
@@ -179,11 +184,33 @@ class ConversationalTrafficAgent:
         # 3. Định tuyến và gọi Step 4 (Reasoning SQL)
         # Nếu thiếu loại phương tiện hoặc không có bất cứ hành vi vi phạm nào được bóc tách
         if event.loai_phuong_tien == "ChuaXacDinh" or not event.danh_sach_hanh_vi:
+            factual_comparative_penalties = {}
+            if event.danh_sach_hanh_vi:
+                for vt in ["OTo", "XeMay", "XeDap"]:
+                    # Tạo bản sao sự kiện với loại xe giả định để tìm kiếm chính xác từ DB
+                    temp_event = SuKienGiaoThong(**event.model_dump())
+                    temp_event.loai_phuong_tien = vt
+                    try:
+                        temp_decision = self.pipeline.reasoning_engine.evaluate(temp_event)
+                        if temp_decision.get("detailed_penalties"):
+                            dp = temp_decision["detailed_penalties"][0]
+                            factual_comparative_penalties[vt] = {
+                                "has_data": True,
+                                "fine_range": dp["fine_range"],
+                                "calculated_fine": dp["calculated_fine"],
+                                "points_deducted": dp["points_deducted"],
+                                "license_revocation_months": temp_decision["summary"]["max_license_revocation_months"],
+                                "provision_id": dp["provision_id"]
+                            }
+                    except Exception:
+                        pass
+            
             decision = {
                 "mode": "AMBIGUOUS_FALLBACK",
                 "is_ambiguous": True,
                 "thong_tin_con_thieu": event.thong_tin_con_thieu or ["Loại phương tiện di chuyển"],
-                "danh_sach_hanh_vi": [hv.mo_ta for hv in event.danh_sach_hanh_vi]
+                "danh_sach_hanh_vi": [hv.mo_ta for hv in event.danh_sach_hanh_vi],
+                "factual_comparative_penalties": factual_comparative_penalties
             }
         else:
             decision = self.pipeline.reasoning_engine.evaluate(event)
