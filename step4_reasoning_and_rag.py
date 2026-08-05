@@ -78,8 +78,17 @@ class UniversalLegalReasoningEngine:
                     "DANG_KIEM_HET_HAN_DUEI_1T": "%dưới 01 tháng%",
                     "KHONG_DONG_MU_BH": "%mũ bảo hiểm%",
                     "KHONG_THAT_DAY_AN_TOAN": "%dây%an toàn%",
-                    "DUNG_DIEN_THOAI": "%điện thoại%",
-                    "GAY_TAI_NAN_BO_CHAY": "%gây tai nạn%không dừng%" # <--- Thêm từ khóa ánh xạ
+                    "DUNG_DIEN_THOAI": "%sử dụng điện thoại%",
+                    "GAY_TAI_NAN_BO_CHAY": "%gây tai nạn%không dừng%",
+                    "LANG_LACH_DANH_VONG": "%lạng lách%đánh võng%",
+                    "DI_NGUOC_CHIEU_DUONG_CAM": "%ngược chiều%",
+                    "MA_TUY": "%ma túy%",
+                    "DUNG_DO_SAI_QUY_DINH": "%dừng xe%đỗ xe%",
+                    "KHONG_BAT_DEN": "%đèn chiếu sáng%",
+                    "CHUYEN_HUONG_KHONG_XI_NHAN": "%tín hiệu báo hướng%",
+                    "DUA_XE_TRAI_PHEP": "%đua xe%",
+                    "CHO_QUA_SO_NGUOI": "%được phép chở%",
+                    "CHO_QUA_TAI": "%tải trọng%"
                 }
                 pattern = keyword_map.get(code, f"%{hv.mo_ta}%")
                 
@@ -87,7 +96,9 @@ class UniversalLegalReasoningEngine:
                 cur.execute(sql, (event.loai_phuong_tien, pattern))
                 rows = cur.fetchall()
 
-                # BỘ LỌC KHỬ NHIỄM CHÉO
+                # BỘ LỌC KHỬ NHIỄM CHÉO & XẾP HẠNG TRÙNG LẶP TỪ KHÓA TỐT NHẤT (Best Match Ranking)
+                import re
+                filtered_rows = []
                 for r in rows:
                     text_lower = r["raw_text"].lower()
                     text_check = text_lower.replace("mô tô", "").replace("moto", "")
@@ -100,8 +111,27 @@ class UniversalLegalReasoningEngine:
                     elif event.loai_phuong_tien == "XeMay":
                         if has_oto and not has_xemay: continue
                             
-                    matched_dict[r["id"]] = r
-                    break
+                    filtered_rows.append(r)
+
+                if filtered_rows:
+                    desc_tokens = set(re.sub(r'[^\w\s]', ' ', hv.mo_ta.lower()).split())
+                    best_row = None
+                    max_score = -1
+                    
+                    for r in filtered_rows:
+                        r_tokens = set(re.sub(r'[^\w\s]', ' ', r["raw_text"].lower()).split())
+                        overlap = len(desc_tokens.intersection(r_tokens))
+                        # Điểm số tổng hợp = số từ trùng lặp + điểm thưởng nếu trùng khớp loại phương tiện cụ thể
+                        score = overlap
+                        if r["vehicle_type"] == event.loai_phuong_tien:
+                            score += 10
+                            
+                        if score > max_score:
+                            max_score = score
+                            best_row = r
+                    
+                    if best_row:
+                        matched_dict[best_row["id"]] = best_row
 
         return list(matched_dict.values()), alcohol_bracket_items
 
