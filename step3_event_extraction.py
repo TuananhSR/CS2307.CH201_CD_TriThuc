@@ -89,6 +89,10 @@ class EventExtractor:
         - Đua xe trái phép, tổ chức đua xe -> 'DUA_XE_TRAI_PHEP'
         - Chở quá số người quy định được phép chở của phương tiện -> 'CHO_QUA_SO_NGUOI'
         - Chở hàng quá tải trọng cho phép của xe, quá tải trọng cầu đường -> 'CHO_QUA_TAI'
+
+        Quy tắc trích xuất Tình tiết tăng nặng/giảm nhẹ:
+        - 'tinh_tiet_tang_nang': Nếu người dùng đề cập đến hành vi chống đối, lăng mạ, thách thức CSGT, cãi lộn, lạng lách bốc đầu khi có hiệu lệnh dừng xe, hoặc gây tai nạn bỏ chạy trốn tránh trách nhiệm. Trích xuất chuỗi mô tả ngắn gọn (ví dụ: 'Chống đối CSGT', 'Thách thức lăng mạ', 'Bỏ chạy trốn tránh').
+        - 'tinh_tiet_giam_nhe': Nếu người dùng đề cập đến việc chủ động tự thú, tự nguyện khai báo thành khẩn, hợp tác tốt, chủ động khắc phục hậu quả đền bù thiệt hại. Trích xuất chuỗi mô tả ngắn gọn (ví dụ: 'Thành khẩn khai báo', 'Khắc phục hậu quả', 'Tự thú').
         """
 
         prompt = f"Mô tả của người dùng:\n\"{user_query}\""
